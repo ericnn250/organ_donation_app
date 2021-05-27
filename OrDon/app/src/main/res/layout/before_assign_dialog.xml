@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Requesting  Organ"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:elevation="5dp"
+        android:src="@drawable/ic_close" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/separator"
+        android:layout_below="@+id/close"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/grey_border_top"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/separator"
+        android:id="@+id/content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Names"
+            app:layout_constraintBottom_toTopOf="@+id/textViewEmai"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bosco Eric "
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textViewEmai"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Reference Number"
+            app:layout_constraintBottom_toTopOf="@+id/textViewcontact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/dialog_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="......"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewEmai"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewEmai"
+            app:layout_constraintTop_toTopOf="@+id/textViewEmai" />
+
+        <TextView
+            android:id="@+id/textViewcontact"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Contact"
+            app:layout_constraintBottom_toTopOf="@+id/textViewadre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewEmai" />
+
+        <TextView
+            android:id="@+id/dialog_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0788236167"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewcontact"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewcontact"
+            app:layout_constraintTop_toTopOf="@+id/textViewcontact" />
+
+        <TextView
+            android:id="@+id/textViewadre"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Address"
+            app:layout_constraintBottom_toTopOf="@+id/textViewabd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewcontact" />
+
+        <TextView
+            android:id="@+id/dialog_adres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kn207 st"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewadre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewadre"
+            app:layout_constraintTop_toTopOf="@+id/textViewadre" />
+
+        <TextView
+            android:id="@+id/textViewabd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Date of Birth"
+            app:layout_constraintBottom_toTopOf="@+id/textViewaor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewadre" />
+
+        <TextView
+            android:id="@+id/dialog_bd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="35 Kanama 2022"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewabd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewabd"
+            app:layout_constraintTop_toTopOf="@+id/textViewabd" />
+
+        <TextView
+            android:id="@+id/textViewaor"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Organ"
+            app:layout_constraintBottom_toTopOf="@+id/textViewblood"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewabd" />
+
+        <TextView
+            android:id="@+id/dialog_organ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewaor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewaor"
+            app:layout_constraintTop_toTopOf="@+id/textViewaor" />
+
+        <TextView
+            android:id="@+id/textViewblood"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Blood Type"
+            app:layout_constraintBottom_toTopOf="@+id/textViewcomm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewaor" />
+
+        <TextView
+            android:id="@+id/dialog_blodtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewblood"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewblood"
+            app:layout_constraintTop_toTopOf="@+id/textViewblood" />
+
+        <TextView
+            android:id="@+id/textViewcomm"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Comment"
+            app:layout_constraintBottom_toTopOf="@+id/textViewdt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewblood" />
+
+        <TextView
+            android:id="@+id/dialog_comment"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="When people are damaging the environment,
+             it is because they don’t have the facts, or haven’t considered
+            a particular course of action. Share this app with "
+            app:layout_constraintBottom_toBottomOf="@+id/textViewcomm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewcomm"
+            app:layout_constraintTop_toTopOf="@+id/textViewcomm" />
+
+        <TextView
+            android:id="@+id/textViewdt"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Request Date"
+            app:layout_constraintBottom_toTopOf="@+id/textViewstat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewcomm" />
+
+        <TextView
+            android:id="@+id/dialog_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 nov 2020"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewdt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewdt"
+            app:layout_constraintTop_toTopOf="@+id/textViewdt" />
+
+        <TextView
+            android:id="@+id/textViewstat"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Status"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewdt"
+            app:layout_constraintBottom_toTopOf="@+id/relativebuttons"/>
+
+        <TextView
+            android:id="@+id/dialog_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PENDING"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewstat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewstat"
+            app:layout_constraintTop_toTopOf="@+id/textViewstat" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativebuttons"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewstat">
+
+            <Button
+                android:id="@+id/cancel_assign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/assign"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/grey_border"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/assign"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/red_onclick_grey"
+                android:layout_marginRight="5dp"
+                android:text="Assign Doctor and Donor" />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

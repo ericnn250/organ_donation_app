@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_border_bottom">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/userR_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/Black"
+        android:text="13"/>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/userR_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="12 feb 2020"/>
+        <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/userR_organe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userR_no"
+            android:layout_marginStart="20dp"
+        android:text="Heart"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/userR"
+            android:textStyle="bold"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Donor"/>
+        <TextView
+            android:id="@+id/userR_donor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userR"
+            android:text="Ndayishimiye "/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/userR1"
+            android:textStyle="bold"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Doctor"/>
+        <TextView
+            android:id="@+id/userR_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/userR1"
+            android:text="Ndayishimiye "/>
+        <TextView
+            android:id="@+id/user_request_tatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="status"/>
+    </RelativeLayout>
+</LinearLayout>

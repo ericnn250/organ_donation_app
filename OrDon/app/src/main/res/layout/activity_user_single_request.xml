@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserSingleRequest">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_sbd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_border_bottom"
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@color/red1"
+            android:theme="?attr/actionBarTheme" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/contentsbd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar_sbd"
+            tools:layout_editor_absoluteY="20dp">
+
+            <TextView
+                android:id="@+id/textView12sbd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Names"
+                app:layout_constraintBottom_toTopOf="@+id/textViewEmaisbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dialog_namesbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bosco Eric "
+                app:layout_constraintBottom_toBottomOf="@+id/textView12sbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView12sbd"
+                app:layout_constraintTop_toTopOf="@+id/textView12sbd" />
+
+            <TextView
+                android:id="@+id/textViewEmaisbd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Email"
+                app:layout_constraintBottom_toTopOf="@+id/textViewcontactsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12sbd" />
+
+            <TextView
+                android:id="@+id/dialog_emailsbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yes1ericn@gmail.com "
+                app:layout_constraintBottom_toBottomOf="@+id/textViewEmaisbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewEmaisbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewEmaisbd" />
+
+            <TextView
+                android:id="@+id/textViewcontactsbd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Contact"
+                app:layout_constraintBottom_toTopOf="@+id/textViewadresbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewEmaisbd" />
+
+            <TextView
+                android:id="@+id/dialog_contactsbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0788236167"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewcontactsbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewcontactsbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewcontactsbd" />
+
+            <TextView
+                android:id="@+id/textViewadresbd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Address"
+                app:layout_constraintBottom_toTopOf="@+id/textViewabdsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewcontactsbd" />
+
+            <TextView
+                android:id="@+id/dialog_adressbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kn207 st"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewadresbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewadresbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewadresbd" />
+
+            <TextView
+                android:id="@+id/textViewabdsbd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Date of Birth"
+                app:layout_constraintBottom_toTopOf="@+id/textViewaorsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewadresbd" />
+
+            <TextView
+                android:id="@+id/dialog_bdsbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35 Kanama 2022"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewabdsbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewabdsbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewabdsbd" />
+
+            <TextView
+                android:id="@+id/textViewaorsbd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Organ"
+                app:layout_constraintBottom_toTopOf="@+id/textViewbloodsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewabdsbd" />
+
+            <TextView
+                android:id="@+id/dialog_organsbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heart"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewaorsbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewaorsbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewaorsbd" />
+
+            <TextView
+                android:id="@+id/textViewbloodsbd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Blood Type"
+                app:layout_constraintBottom_toTopOf="@+id/textViewcommsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewaorsbd" />
+
+            <TextView
+                android:id="@+id/dialog_blodtypesbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewbloodsbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewbloodsbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewbloodsbd" />
+
+            <TextView
+                android:id="@+id/textViewcommsbd"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Comment"
+                app:layout_constraintBottom_toTopOf="@+id/textViewdtsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewbloodsbd" />
+
+            <TextView
+                android:id="@+id/dialog_commentsbd"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="When people are damaging the environment,
+             it is because they don’t have the facts, or haven’t considered
+            a particular course of action. Share this app with "
+                app:layout_constraintBottom_toBottomOf="@+id/textViewcommsbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewcommsbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewcommsbd" />
+
+            <TextView
+                android:id="@+id/textViewdtsbd"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Donation Date"
+                app:layout_constraintBottom_toTopOf="@+id/textViewstatsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewcommsbd" />
+
+            <TextView
+                android:id="@+id/dialog_datesbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22 nov 2020"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewdtsbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewdtsbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewdtsbd" />
+
+            <TextView
+                android:id="@+id/textViewstatsbd"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Status"
+                app:layout_constraintBottom_toTopOf="@+id/relativebuttonsbd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewdtsbd" />
+
+            <TextView
+                android:id="@+id/dialog_statussbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PENDING"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewstatsbd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewstatsbd"
+                app:layout_constraintTop_toTopOf="@+id/textViewstatsbd" />
+
+            <RelativeLayout
+                android:id="@+id/relativebuttonsbd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewstatsbd">
+
+
+
+                <Button
+                    android:id="@+id/assignsbd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/White"
+                    android:background="@drawable/red_onclick_grey"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:text="Cancel and Delete" />
+                <RelativeLayout
+                    android:id="@+id/result_sectiond"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_below="@+id/assignsbd">
+                    <TextView
+                        android:id="@+id/user_donation_s_doctord"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:text="Doctor"/>
+                    <TextView
+                        android:id="@+id/user_donation_s_receiverd"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/user_donation_s_doctord"
+                        android:text="Donor"/>
+                    <TextView
+                        android:id="@+id/user_donation_s_doctor_reald"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/user_donation_s_doctord"
+                        android:text="Emmy"/>
+                    <TextView
+                        android:id="@+id/user_donation_s_receiver_reald"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/user_donation_s_receiverd"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/user_donation_s_doctor_reald"
+                        android:text="Jake"/>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:id="@+id/progMySrequest"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    </RelativeLayout>

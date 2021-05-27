@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".AddDoctorActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar4add_doctor">
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/broadcast_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Doctor"
+                android:textColor="@color/Black"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/input_doctorname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/broadcast_title"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curved_background"
+                android:gravity="start"
+                android:hint="Names..."
+                android:maxLines="1"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/input_doctor_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_doctorname"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curved_background"
+                android:gravity="start"
+                android:hint="Doctor Email..."
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/input_doctor_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_doctor_email"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curved_background"
+                android:gravity="start"
+                android:hint="Doctor Contact..."
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/input_doctor_hospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_doctor_contact"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curved_background"
+                android:gravity="start"
+                android:hint="Doctor Hospital or clinic..."
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/input_doctor_hospital_adres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_doctor_hospital"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curved_background"
+                android:gravity="start"
+                android:hint="address of hospital or clinic..."
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/input_doctor_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_doctor_hospital_adres"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curved_background"
+                android:gravity="start"
+                android:hint="Province..."
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+
+            <EditText
+                android:id="@+id/input_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_doctor_province"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/curved_background"
+                android:gravity="start"
+                android:hint="District..."
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="10dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/input_district">
+                <Button
+                    android:id="@+id/btn_doctor_add_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/red1"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/btn_doctor_add"
+                    android:background="@drawable/grey_border"
+                    android:text="CANCEL" />
+                <Button
+                    android:id="@+id/btn_doctor_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/White"
+                    android:background="@drawable/cureved_red_bg"
+                    android:text="ADD" />
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4add_doctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_border_bottom"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:titleTextColor="@color/red1" />
+    <RelativeLayout
+        android:id="@+id/progressBarAddnewd"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

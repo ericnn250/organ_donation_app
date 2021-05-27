@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewUser">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar9_view_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_border_bottom"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/red1"
+        android:theme="?attr/actionBarTheme"/>
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_marginTop="60dp"-->
+    <!--        android:id="@+id/csro"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/toolbar9_view_user"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:orientation="vertical" >-->
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbar9_view_user"
+        android:layout_width="match_parent"
+        android:id="@+id/rela_view_user"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_marginLeft="16dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Names" />
+
+        <TextView
+            android:id="@+id/textView_username"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@+id/textView16"
+            android:layout_height="wrap_content"
+            android:text="Aime" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rela_view_user1"
+        android:layout_below="@+id/rela_view_user"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView161"
+            android:layout_marginLeft="16dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Email" />
+
+        <TextView
+            android:id="@+id/textVieweuseremail"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@+id/textView161"
+            android:layout_height="wrap_content"
+            android:text="Aime@gmail.com" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rela_view_user2"
+        android:layout_below="@+id/rela_view_user1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView163"
+            android:layout_marginLeft="16dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Contact" />
+
+        <TextView
+            android:id="@+id/textVieweusercontact"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@+id/textView163"
+            android:layout_height="wrap_content"
+            android:text="078864624" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rela_view_user3"
+        android:layout_below="@+id/rela_view_user2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView162"
+            android:layout_marginLeft="16dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Adress" />
+
+        <TextView
+            android:id="@+id/textVieweuseradres"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@+id/textView162"
+            android:layout_height="wrap_content"
+            android:text="kigali kn92" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rela_view_user4"
+        android:layout_below="@+id/rela_view_user3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView164"
+            android:layout_marginLeft="16dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Date of Birth" />
+
+        <TextView
+            android:id="@+id/textVieweuserdob"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/Black"
+            android:layout_toRightOf="@+id/textView164"
+            android:layout_height="wrap_content"
+            android:text="12 april 2004" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rela_view_user5"
+        android:layout_below="@+id/rela_view_user4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_user_datails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabreq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Requests" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabdon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donation" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_userdetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabLayout_user_datails" />
+
+    </RelativeLayout>
+    <!--        </RelativeLayout>-->
+    <!--    </ScrollView>-->
+</RelativeLayout>

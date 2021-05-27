@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1012652524743",
+    "firebase_url": "https://ordon-1df01.firebaseio.com",
+    "project_id": "ordon-1df01",
+    "storage_bucket": "ordon-1df01.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012652524743:android:1eb317a02a5c59c3f56ae2",
+        "android_client_info": {
+          "package_name": "com.organdonation.ordon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012652524743-lonlk3oduptrlkq0f8cb33b3513qta6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFQuXx-4Vj-N8QtjXMmTpRBDe7af-8m8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012652524743-lonlk3oduptrlkq0f8cb33b3513qta6a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

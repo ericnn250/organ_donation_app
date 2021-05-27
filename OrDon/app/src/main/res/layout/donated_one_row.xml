@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView12donated_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Bosco"
+            />
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/textView12donated_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 dec 2019"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/textView12donated_organ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/grey_border_top"
+        android:layout_height="1dp"/>
+</LinearLayout>
